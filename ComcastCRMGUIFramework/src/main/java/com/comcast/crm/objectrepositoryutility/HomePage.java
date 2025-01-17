@@ -14,7 +14,12 @@ public class HomePage {
 		this.driver = driver;
 
 	}
+	@FindBy(linkText="Products")
+	private WebElement productLink;
 
+	public WebElement getProductLink() {
+		return productLink;
+	}
 	@FindBy(linkText = "Organizations")
 	private WebElement orglink;
 
