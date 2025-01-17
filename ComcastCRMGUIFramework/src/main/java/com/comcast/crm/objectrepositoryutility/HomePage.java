@@ -14,6 +14,12 @@ public class HomePage {
 		this.driver = driver;
 
 	}
+	@FindBy(linkText="Dashboard")
+	private WebElement Dashboardlink;
+	
+	public WebElement getDashboardlink() {
+		return Dashboardlink;
+	}
 	@FindBy(linkText="Products")
 	private WebElement productLink;
 
